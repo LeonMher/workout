@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+ 
+  flex-direction: column;
+  height: 300vh;
+}
+
+.navBar h3{
+  position: relative;
+  left: 70rem;
+  cursor: pointer;
+}
+
+.navBar{
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  height: 100px;
+  padding-bottom: 30px;
+  background-color: rgb(32, 0, 32);
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.navBar ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navBar ul li{
+  margin-left: 50px;
+  width: 100px;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.navBar ul li:hover{
+  color: rgb(128, 128, 128);
+}
+
+.mainPage{
+  background-attachment: fixed;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+
+}
+
+.mainPage h1{
+  position: relative;
+  left: 100px;
+  z-index: 999;
+  font-size: 100px;
+  color: white;
+  width: 700px;
+}
+
+.mainPage button{
+  z-index: 999;
+  position: relative;
+  right: 33rem;
+  top: 20rem;
+  width: 300px;
+  height: 100px;
+  background-color: purple;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  transition: .3s;
+}
+
+.mainPage button:hover{
+  background-color: white;
+  color: black;
+}
+
+
+.previewPage{
+  height: 100vh;
+  display: grid;
+  
+  grid-template-columns: auto auto;
+}
+
+.previewPage .firstCol, .previewPage .secondCol{
+  margin: 30px;
+  height: 700px;
+  width: 55rem;
+}
+
+.previewPage .firstCol{
+ 
+  background-image: url("https://images.unsplash.com/photo-1561214078-f3247647fc5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: contain;
+  background-attachment: fixed;
+  
+}
+
+.previewPage .secondCol{
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.previewPage .secondCol p{
+  width: 400px;
+  color: white;
+  font-size: 30px;
+}
+.previewPage .secondCol h1{
+  color: white;
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+
+.previewPage .secondCol span{
+  color: red;
+}
+
+
+.classes{
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.classes .class{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  
+
+  border-top: solid black;
+  margin-top: 30px;
+  
+}
+
+.classes .class h3{
+ width: 50rem ;
+ font-size: 60px;
+ 
+}
+
+.classes .class button{
+  width: 200px;
+  height: 100px;
+  background-color: purple;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  transition: .3s;
+}
+
+
+
+
+.classes .class button:hover{
+  background-color: white;
+  color: black;
+}
+
+.border{
+  border-bottom: solid black;
+  width: 98%;
+}
