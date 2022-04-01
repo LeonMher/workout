@@ -34,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
 
 }
 
@@ -44,6 +45,9 @@
   list-style: none;
   cursor: pointer;
   transition: .3s;
+  text-decoration: none;
+  color: white;
+  
 }
 
 .navBar ul li:hover{
@@ -189,3 +193,102 @@
   border-bottom: solid black;
   width: 98%;
 }
+
+.firstSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  background-attachment: fixed;
+  background-image:  url("https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80");
+  background-color: brown;
+  background-size: cover;
+}
+
+.secondSection{
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.secondSection h3{
+  font-size: 80px;
+  margin-bottom: 100px;
+}
+
+.secondSection form input {
+  width: 300px;
+  height: 70px;
+  position: relative;
+  bottom: 5px;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.secondSection form button{
+
+  
+    width: 130px;
+    height: 70px;
+    background-color: purple;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+
+}
+
+.secondSection form button:hover{
+  background-color: rgb(140, 0, 196);
+  color: rgb(255, 255, 255);
+}
+
+.closeBtn{
+  display: none;
+  position: absolute;
+  left: 20rem;
+}
+
+
+@media only screen and (max-width: 390px) {
+  
+
+  .nav ul{
+    width: 100%;
+  }
+  
+.unordered{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(32, 0, 32);
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  left: 7rem;
+  width: 200px;
+  top: 250px;
+}
+
+.unordered li {
+  font-size: 30px;
+  border-top: 1px solid black;
+  padding: 10px;
+  display: flex;
+  margin-right: 80px;
+  
+}
+
+.closeBtn{
+  display: block;
+  position: absolute;
+  left: 20rem;
+}
+
+}
+

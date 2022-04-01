@@ -1,18 +1,31 @@
 import './App.css';
+import {
+  BrowserRouter, Routes,
+  
+  Route
+} from 'react-router-dom'
 import NavBar from './NavBar';
-import MainPage from './MainPage'
-import PreviewPage from './PreviewPage';
-import Classes from './Classes'
+import Programs from './Programs';
+import Home from './Home';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <NavBar />
-      <MainPage />
-      <PreviewPage />
-      <Classes />
+    
+    <Routes>
+      
+      
+     
+          <Route path='/' exact element={<Home />}/>
+          <Route path='/programs' element={<Programs />}/>
+        
+      </Routes>
+     
      
     </div>
+    </BrowserRouter>
   );
 }
 
