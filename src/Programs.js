@@ -18,17 +18,17 @@ function Programs(){
 
 
     function setTodoFunc(){
-        localStorage.setItem('name', name)
-        localStorage.setItem('age', age)
-        localStorage.setItem('day', day)
+        sessionStorage.setItem('name', name)
+        sessionStorage.setItem('age', age)
+        sessionStorage.setItem('day', day)
     }
   
 
     function getLs(){
         
-        const dataName = localStorage.getItem('name')
-        const dataAge = localStorage.getItem('age')
-        const dataDay = localStorage.getItem('day')
+        const dataName = sessionStorage.getItem('name')
+        const dataAge = sessionStorage.getItem('age')
+        const dataDay = sessionStorage.getItem('day')
         setName(dataName)
         setAge(dataAge)
         setDay(dataDay)
