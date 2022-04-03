@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 function NavBar(){
 
-    const [toggle, setToggle] = useState(false)
+    const [toggle, setToggle] = useState(true)
 
     const toggleNav = ()=>{
         setToggle(!toggle)
