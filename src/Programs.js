@@ -1,6 +1,6 @@
 import React from "react";
-import workoutPlan from "./WorkoutPlan";
-
+import {workoutPlan, workoutPlanAdults} from "./WorkoutPlan";
+import Button from '@material-ui/core/Button';
 import { useEffect, useState } from "react";
 import {gsap} from "gsap"
 function Programs(){
@@ -89,23 +89,23 @@ function Programs(){
                     
 
 
-                    <button onClick={setTodoFunc}>Հիշել</button>
+                    <Button color="primary" variant="contained" onClick={setTodoFunc}>Հիշել</Button>
                     
                 </form>
-                <button onClick={getLs}>Բեռնել</button>
+                <Button color="default" variant="contained" onClick={getLs}>Բեռնել</Button>
 
                
-                {age >= 21 && day === "Monday" ? 
+                {age <= 17 && day === "Monday" ? 
                 <>
                      <h1>{name}-ի ունիկալ պարապմունքի պլան</h1>
                         <div className="individualPlan">
                         <h2 >Երկուշաբթի</h2>
                         <h4>Դոշ/Բիցեպս</h4>
                         <p>1.Սկզբի համար {workoutPlan[0].firstExercise[0].nameOfExercise}, {workoutPlan[0].firstExercise[0].reps} անգամ, {workoutPlan[0].firstExercise[0].sets} sets  </p>
-                        <p>2. Հետո {workoutPlan[0].secondExercise[0].nameOfExercise}, {workoutPlan[0].secondExercise[0].reps} անգամ, {workoutPlan[0].firstExercise[0].sets} sets  </p>
-                        <p>3. Եթե կարաս {workoutPlan[0].thirdExercise[0].nameOfExercise}, {workoutPlan[0].thirdExercise[0].reps} անգամ, {workoutPlan[0].firstExercise[0].sets} sets  </p>
-                        <p>4. Դավայ, մի հատ էլ {workoutPlan[0].forthExercise[0].nameOfExercise}, {workoutPlan[0].forthExercise[0].reps} անգամ, {workoutPlan[0].firstExercise[0].sets} sets  </p>
-                        <p>5. Վերջում էլ {workoutPlan[0].fifthExercise[0].nameOfExercise}, {workoutPlan[0].fifthExercise[0].reps} անգամ, {workoutPlan[0].firstExercise[0].sets} sets  </p>
+                        <p>2. Հետո {workoutPlan[0].secondExercise[0].nameOfExercise}, {workoutPlan[0].secondExercise[0].reps} անգամ, {workoutPlan[0].secondExercise[0].sets} sets  </p>
+                        <p>3. Եթե կարաս {workoutPlan[0].thirdExercise[0].nameOfExercise}, {workoutPlan[0].thirdExercise[0].reps} անգամ, {workoutPlan[0].thirdExercise[0].sets} sets  </p>
+                        <p>4. Դավայ, մի հատ էլ {workoutPlan[0].forthExercise[0].nameOfExercise}, {workoutPlan[0].forthExercise[0].reps} անգամ, {workoutPlan[0].forthExercise[0].sets} sets  </p>
+                        <p>5. Վերջում էլ {workoutPlan[0].fifthExercise[0].nameOfExercise}, {workoutPlan[0].fifthExercise[0].reps} անգամ, {workoutPlan[0].fifthExercise[0].sets} sets  </p>
                         </div>
                 </>
               
@@ -116,7 +116,7 @@ function Programs(){
 
 
                     
-                    {age >= 21 && day === "Wednesday" ? 
+                    {age <= 17 && day === "Wednesday" ? 
                 <>
                      <h1>{name}-ի ունիկալ պարապմունքի պլան</h1>
                         <div className="individualPlan">
@@ -135,7 +135,7 @@ function Programs(){
                 
                 : null}
 
-                    {age >= 21 && day === "Friday" ? 
+                    {age <= 17 && day === "Friday" ? 
                 <>
                      <h1>{name}-ի ունիկալ պարապմունքի պլան</h1>
                         <div className="individualPlan">
@@ -157,7 +157,7 @@ function Programs(){
 
 
 
-                    {age >= 21 && day === "Saturday" ? 
+                    {age < 17 && day === "Saturday" ? 
                 <>
                      <h1>{name}-ի ունիկալ պարապմունքի պլան</h1>
                         <div className="individualPlan">
@@ -173,6 +173,70 @@ function Programs(){
                 
                 
                 : null}
+
+
+                {age > 17 && day === "Monday" ? 
+                <>
+                     <h1>{name}-ի ունիկալ պարապմունքի պլան</h1>
+                        <div className="individualPlan">
+                        <p>1. Սկզբի համար {workoutPlanAdults[0].firstExercise[0].nameOfExercise}, {workoutPlanAdults[0].firstExercise[0].reps} times, {workoutPlanAdults[0].firstExercise[0].sets} sets  </p>
+                        <p>2. Then do {workoutPlanAdults[0].secondExercise[0].nameOfExercise}, {workoutPlanAdults[0].secondExercise[0].reps} times, {workoutPlanAdults[0].secondExercise[0].sets} sets  </p>
+                        <p>3. Do some {workoutPlanAdults[0].thirdExercise[0].nameOfExercise}, {workoutPlanAdults[0].thirdExercise[0].reps} times, {workoutPlanAdults[0].thirdExercise[0].sets} sets  </p>
+                        <p>4. Do some {workoutPlanAdults[0].forthExercise[0].nameOfExercise}, {workoutPlanAdults[0].forthExercise[0].reps} times, {workoutPlanAdults[0].forthExercise[0].sets} sets  </p>
+                        <p>5. Do some {workoutPlanAdults[0].fifthExercise[0].nameOfExercise}, {workoutPlanAdults[0].fifthExercise[0].reps} times, {workoutPlanAdults[0].fifthExercise[0].sets} sets  </p>
+                        <p>6. Do some {workoutPlanAdults[0].sixthExercise[0].nameOfExercise}, {workoutPlanAdults[0].sixthExercise[0].reps} times, {workoutPlanAdults[0].sixthExercise[0].sets} sets  </p>
+                        <p>7. Do some {workoutPlanAdults[0].seventhExercise[0].nameOfExercise}, {workoutPlanAdults[0].seventhExercise[0].reps} times, {workoutPlanAdults[0].seventhExercise[0].sets} sets  </p>
+                        <p>8. Do some {workoutPlanAdults[0].eighthExercise[0].nameOfExercise}, {workoutPlanAdults[0].eighthExercise[0].reps} times, {workoutPlanAdults[0].eighthExercise[0].sets} sets  </p>
+                        </div>
+                </>
+              
+                
+                
+                
+                : null}
+
+
+                    {age > 17 && day === "Wednesday" ? 
+                <>
+                     <h1>{name}-ի ունիկալ պարապմունքի պլան</h1>
+                        <div className="individualPlan">
+                        <p>1. Սկզբի համար {workoutPlanAdults[1].firstExercise[0].nameOfExercise}, {workoutPlanAdults[1].firstExercise[0].reps} times, {workoutPlanAdults[1].firstExercise[0].sets} sets  </p>
+                        <p>2. Then do {workoutPlanAdults[1].secondExercise[0].nameOfExercise}, {workoutPlanAdults[1].secondExercise[0].reps} times, {workoutPlanAdults[1].secondExercise[0].sets} sets  </p>
+                        <p>3. Do some {workoutPlanAdults[1].thirdExercise[0].nameOfExercise}, {workoutPlanAdults[1].thirdExercise[0].reps} times, {workoutPlanAdults[1].thirdExercise[0].sets} sets  </p>
+                        <p>4. Do some {workoutPlanAdults[1].forthExercise[0].nameOfExercise}, {workoutPlanAdults[1].forthExercise[0].reps} times, {workoutPlanAdults[1].forthExercise[0].sets} sets  </p>
+                        <p>5. Do some {workoutPlanAdults[1].fifthExercise[0].nameOfExercise}, {workoutPlanAdults[1].fifthExercise[0].reps} times, {workoutPlanAdults[1].fifthExercise[0].sets} sets  </p>
+                        <p>6. Do some {workoutPlanAdults[1].sixthExercise[0].nameOfExercise}, {workoutPlanAdults[1].sixthExercise[0].reps} times, {workoutPlanAdults[1].sixthExercise[0].sets} sets  </p>
+                      
+                        </div>
+                </>
+              
+                
+                
+                
+                : null}
+
+                {age > 17 && day === "Friday" ? 
+                <>
+                     <h1>{name}-ի ունիկալ պարապմունքի պլան</h1>
+                        <div className="individualPlan">
+                        <p>1. Սկզբի համար {workoutPlanAdults[2].firstExercise[0].nameOfExercise}, {workoutPlanAdults[2].firstExercise[0].reps} times, {workoutPlanAdults[2].firstExercise[0].sets} sets  </p>
+                        <p>2. Then do {workoutPlanAdults[2].secondExercise[0].nameOfExercise}, {workoutPlanAdults[2].secondExercise[0].reps} times, {workoutPlanAdults[2].secondExercise[0].sets} sets  </p>
+                        <p>3. Do some {workoutPlanAdults[2].thirdExercise[0].nameOfExercise}, {workoutPlanAdults[2].thirdExercise[0].reps} times, {workoutPlanAdults[2].thirdExercise[0].sets} sets  </p>
+                        <p>4. Do some {workoutPlanAdults[2].forthExercise[0].nameOfExercise}, {workoutPlanAdults[2].forthExercise[0].reps} times, {workoutPlanAdults[2].forthExercise[0].sets} sets  </p>
+                        <p>5. Do some {workoutPlanAdults[2].fifthExercise[0].nameOfExercise}, {workoutPlanAdults[2].fifthExercise[0].reps} times, {workoutPlanAdults[2].fifthExercise[0].sets} sets  </p>
+                       
+                      
+                        </div>
+                </>
+              
+                
+                
+                
+                : null}
+ 
+  
+
+
             </div>
         
         </div>

@@ -14,7 +14,7 @@ function MainPage(){
         <div className="mainPage">
 
             <h1 className="head theMainThing">A.M.F Բացահայտի'ր պոնտենցիալը</h1>
-            <button className="headBtn">Գևանցվել</button>
+            <button className="headBtn">Գրանցվել</button>
 
         
         </div>

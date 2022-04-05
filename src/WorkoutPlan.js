@@ -38,5 +38,42 @@ const workoutPlan = [
 
 ]
 
+const workoutPlanAdults = [
+    {
+        dayOfWeek:"Monday",
+        firstExercise: [{nameOfExercise: "Պարկած, շտանգով", reps: 12, sets: 5}],
+        secondExercise: [{nameOfExercise: "Պարկած, գանտելներով + տրինաժոր", reps: 10, sets: 3}],
+        thirdExercise: [{nameOfExercise: "Թեք պարկած գանտելով", reps: 10, sets: 5}],
+        forthExercise: [{nameOfExercise: "Գետնից ժիմ", reps: 20, sets: 2}],
+        fifthExercise: [{nameOfExercise: "Շտանգով, կանգնած", reps: 10, sets: 5}],
+        sixthExercise: [{nameOfExercise: "Գանտելով հենած", reps: 10, sets: 4}],
+        seventhExercise: [{nameOfExercise: "Մոլոտ գանտելներով", reps: 10, sets: 5}],
+        eighthExercise: [{nameOfExercise: "Տրինաժոռով կանգնած", reps: 10, sets: 3}],
+        
+    },
 
-export default workoutPlan;
+    {
+        dayOfWeek:"Wednesday",
+        firstExercise: [{nameOfExercise: "Նստած, գանտելներով + Армейский", reps: 10, sets: 3}],
+        secondExercise: [{nameOfExercise: "Շտանգով, դեպի կզակը + գանտելներով՝ կողքի", reps: 10, sets: 3}],
+        thirdExercise: [{nameOfExercise: "Քաշը ուղիղ մեկնել", reps: 15, sets: 3}],
+        forthExercise: [{nameOfExercise: "Պարկած շտանգով տրիցեպս", reps: 12, sets: 5}],
+        fifthExercise: [{nameOfExercise: "Կանգնած գանտելով տրիցեպս", reps: 12, sets: 3}],
+        sixthExercise: [{nameOfExercise: "Տրինաժորի վրա + Հենված նստարանին", reps: 10, sets: 3}],
+        
+    },
+
+    {
+        dayOfWeek:"Friday",
+        firstExercise: [{nameOfExercise: "Տրինաժոռով վզի հետև + տրինաժոռով (Տրոս)", reps: 10, sets: 4}],
+        secondExercise: [{nameOfExercise: "T образ ", reps: 10, sets: 4}],
+        thirdExercise: [{nameOfExercise: "Մի գանտելով քաշել", reps: 10, sets: 5}],
+        forthExercise: [{nameOfExercise: "Pull over", reps: 8, sets: 3}],
+        fifthExercise: [{nameOfExercise: '"Եսիմ" վարժություն', reps: 10, sets: 5}],
+        
+        
+    },
+]
+
+
+export {workoutPlan, workoutPlanAdults};

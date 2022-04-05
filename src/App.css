@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 .App{
@@ -678,5 +679,24 @@ h1 span{
   position: relative;
   top: -30px;
 }
+
+.about h1{
+  height: 200vh;
+  width: 100%;
+  position: relative;
+  top: 30rem;
+  left: 35%;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  
+}
+.aboutFirst{
+  height: 150vh;
+  background-image: url('./pic/culturalHouse.jpg');
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 }
