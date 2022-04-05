@@ -31,7 +31,7 @@ function NavBar(){
                 
 
             </nav>
-            <button onClick={toggleNav} className='closeBtn'>Btn</button>
+            <button onClick={toggleNav} className='closeBtn'>Menu</button>
 
             <h3>Login</h3>
         </div>

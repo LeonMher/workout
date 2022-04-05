@@ -47,7 +47,7 @@ function Programs(){
             </div>
 
             <div className="secondSection">
-                <h3>Տեսնենք ինչի ես ընդունակ</h3>
+                <h3>Մուտքագրիր տվյալները</h3>
                 <form onSubmit={(e)=>{
                     e.preventDefault()
                    
@@ -69,7 +69,7 @@ function Programs(){
 
                                 })} 
                                 
-                                style={{height:"25px", width:"35px", verticalAlign: "middle"}}
+                                style={{height:"15px", width:"15px", verticalAlign: "middle"}}
                                 /> 
                       <label className="lbl">Չորեքշաբթի</label>
                     <input className="radioBtns" type='radio' name="btn" value='Wednesday' onChange={((e)=>{
@@ -120,7 +120,7 @@ function Programs(){
                 <>
                      <h1>{name}-ի ունիկալ պարապմունքի պլան</h1>
                         <div className="individualPlan">
-                        <h2 >Wednesday</h2>
+                        <h2 >Չորեքշաբթի</h2>
                         <h4 >Ուս/Տրիցեպս</h4>
                         <p>1. Սկզբի համար {workoutPlan[1].firstExercise[0].nameOfExercise}, {workoutPlan[1].firstExercise[0].reps} անգամ, {workoutPlan[1].firstExercise[0].sets} sets  </p>
                         <p>2. Հետո {workoutPlan[1].secondExercise[0].nameOfExercise}, {workoutPlan[1].secondExercise[0].reps} անգամ, {workoutPlan[1].firstExercise[0].sets} sets  </p>
