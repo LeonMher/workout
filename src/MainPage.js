@@ -13,8 +13,8 @@ function MainPage(){
     return(
         <div className="mainPage">
 
-            <h1 className="head">Where Fitness Becomes Your Lifestyle</h1>
-            <button className="headBtn">Book Now</button>
+            <h1 className="head theMainThing">A.M.F Բացահայտի'ր պոնտենցիալը</h1>
+            <button className="headBtn">Գևանցվել</button>
 
         
         </div>

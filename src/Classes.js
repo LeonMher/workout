@@ -5,21 +5,21 @@ function Classes (){
     return(
         <div className='classes'>
             <div className='class'>
-                <h3>Beginner</h3>
-                <h3>45 min</h3>
-                <button>Book now</button>
+                <h3>Սկսնակ</h3>
+                <h3>45 րոպե</h3>
+                <button>Start</button>
             </div>
 
             <div className='class'>
-                <h3>Athlete</h3>
-                <h3>1 hr</h3>
-                <button>Book now</button>
+                <h3>Ուժեղ</h3>
+                <h3>1 ժամ</h3>
+                <button>Start</button>
             </div>
 
             <div className='class'>
-                <h3>Beast</h3>
-                <h3>2 hr</h3>
-                <button>Book now</button>
+                <h3>Գազան</h3>
+                <h3>2 ժամ</h3>
+                <button>Start</button>
             </div>
 
             <div className='border'></div>

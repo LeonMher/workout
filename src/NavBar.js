@@ -16,16 +16,16 @@ function NavBar(){
                 {toggle && (
                     <ul className='unordered'>
                     <Link to='/'>
-                        <li>Home</li>
+                        <li>AMF</li>
                     </Link>
     
     
-                        <li>About</li>
+                        <li>Մեր մասին</li>
                         <Link to='/programs'>
-                        <li>Programs</li>
+                        <li>Ծրագիր</li>
                         </Link>
                         
-                        <li>Challanges</li>
+                        <li>Challange</li>
                     </ul>
                 )}
                 
